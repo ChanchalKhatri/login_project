@@ -43,6 +43,7 @@ input[type="submit"] {
   font-size: 2rem;
   font-weight: bold;
   color: #bb0243;
+  cursor: pointer
 }
 
 a {
