@@ -9,7 +9,7 @@ const Dashboard = () => {
   useEffect(() => {
     const token = localStorage.getItem("token"); // Retrieve JWT token
     axios
-      .get("http://localhost:8000/dashboard", {
+      .get("https://login-project-qm55.onrender.com/dashboard", {
         headers: { Authorization: token }, // Include Authorization header
       })
       .then((res) => {
