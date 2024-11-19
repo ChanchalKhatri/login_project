@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 const secretKey = require("crypto").randomBytes(32).toString("hex");
 
 const conn = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "temp_demo",
+  host: "sql12.freesqldatabase.com",
+  user: "sql12745715",
+  password: "cb4eceBW8i",
+  database: "sql12745715",
 });
 
 app.post("/register", (req, res) => {
@@ -68,6 +68,6 @@ app.get("/dashboard", verifyToken, (req, res) => {
   });
 });
 
-app.listen(8000, function () {
+app.listen(3306, function () {
   console.log("Backend Started");
 });
