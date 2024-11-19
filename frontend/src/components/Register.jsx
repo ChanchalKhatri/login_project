@@ -20,7 +20,7 @@ const Register = () => {
       const main = { username, fname, lname, email, pass };
 
       axios
-        .post("http://localhost:8000/register", main)
+        .post("https://login-project-qm55.onrender.com/register", main)
         .then((res) => {
           if (res.status === 201) {
             console.log("User Registered");
