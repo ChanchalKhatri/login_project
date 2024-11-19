@@ -17,7 +17,7 @@ const Login = () => {
       const main = [username, pass];
 
       axios
-        .post("http://localhost:8000/login", main)
+        .post("https://login-project-qm55.onrender.com/login", main)
         .then((res) => {
           if (res.status === 200) {
             console.log("Logged In");
